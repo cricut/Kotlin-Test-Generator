@@ -1,0 +1,38 @@
+<idea-plugin>
+    <id>com.cricut.MockKTestGenerator</id>
+    <name>Kotlin MockK Test Generator</name>
+    <version>1.1.1</version>
+    <vendor email="sebastian@helzer.eu">Sebastian Helzer</vendor>
+
+    <description><![CDATA[
+    This is a simple testing plugin.<br>
+    <em>It allows you to generate tests for Kotlin code using MockK for mocks and JUnit4 for the test running engine</em>
+    ]]></description>
+
+    <change-notes><![CDATA[
+    10/3/2020 Added mockK mocking, default failing tests, and a bunch of use case testing.
+
+    11/3/2020 Bug fixes:
+        Ignore protected functions in classes
+        Remove class annotations
+        Relaxed inner mocks
+        Remove class init functions
+        Support objects
+        Support functions as param types in constructors
+
+    ]]>
+    </change-notes>
+
+    <!-- please see https://confluence.jetbrains.com/display/IDEADEV/Build+Number+Ranges for description -->
+    <idea-version since-build="192" until-build="193.*"/>
+
+    <depends>com.intellij.modules.lang</depends>
+    <depends>org.jetbrains.kotlin</depends>
+
+    <actions>
+        <action id="testGen.TestGeneratorAction" class="com.cricut.testgen.actions.TestGeneratorAction" text="KotlinGenerateTest"
+                description="Generate test without mocks">
+            <add-to-group group-id="KotlinGenerateGroup" anchor="first"/>
+        </action>
+    </actions>
+</idea-plugin>
