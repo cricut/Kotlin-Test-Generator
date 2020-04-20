@@ -19,4 +19,4 @@ To use: select a class name in the code with the cursor -> `Command N` -> Kotlin
 You're welcome to report issues and raise feature requests at the issues tab
 
 ### Contributing/Developing
-Please refer to [`CONTRIBUTING.md`](./CONTRIBUTING.md) file.
+Feel free to open up a PR and we'll review it promptly.
