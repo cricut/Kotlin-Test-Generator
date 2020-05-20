@@ -10,7 +10,7 @@ An Intellij plugin built for Android Studio and Intellij IDEA that generates JUn
 
 ### Installation/Usage
 Installation available from JetBrains plugins repository:
-1. From IDEA menu: `Preferences` (`Ctrl`+`Shift`+`S`) -> `Plugins` -> `Browse repositories...` -> Search: `TestMe` -> `Install Plugin`
+1. From IDEA menu: `Preferences` (`Ctrl`+`Shift`+`S`) -> `Plugins` -> `Browse repositories...` -> Search: `Kotlin MockK Test Generator` -> `Install Plugin`
 2. Restart IDEA.
 
 To use: select a class name in the code with the cursor -> `Command N` -> Kotlin Generate Test
