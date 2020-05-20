@@ -20,7 +20,7 @@ object KtFileEditor {
 
     fun removeConstructors(ktClass: KtClassOrObject) {
         ktClass.children.forEach { psiElement ->
-            (psiElement as PsiElement).followPSITree(0) { element, level ->
+            (psiElement as PsiElement).followPSITree(0) { element, _ ->
                 if(
                     element is KtPrimaryConstructor ||
                     element is KtSecondaryConstructor

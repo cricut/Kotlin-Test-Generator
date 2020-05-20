@@ -1,8 +1,7 @@
 <idea-plugin>
     <id>com.cricut.MockKTestGenerator</id>
     <name>Kotlin MockK Test Generator</name>
-    <version>1.1.1</version>
-    <vendor email="sebastian@helzer.eu">Sebastian Helzer</vendor>
+    <vendor email="sebastian@helzer.eu" url="https://github.com/cricut/Kotlin-Test-Generator">Sebastian Helzer</vendor>
 
     <description><![CDATA[
     This is a simple testing plugin.<br>
@@ -10,21 +9,28 @@
     ]]></description>
 
     <change-notes><![CDATA[
-    10/3/2020 Added mockK mocking, default failing tests, and a bunch of use case testing.
-
-    11/3/2020 Bug fixes:
-        Ignore protected functions in classes
-        Remove class annotations
-        Relaxed inner mocks
-        Remove class init functions
-        Support objects
-        Support functions as param types in constructors
-
+    <h1>1.2.0 - 20/5/2020</h1>
+    <ul>
+        <li>Add support for Android Studio 4.1 Canary 9</li>
+    </ul>
+    <h1>1.1.1 - 11/3/2020</h1>
+    <ul>
+        <li>Ignore protected functions in classes</li>
+        <li>Remove class annotations</li>
+        <li>Relaxed inner mocks</li>
+        <li>Remove class init functions</li>
+        <li>Support objects</li>
+        <li>Support functions as param types in constructors</li>
+    </ul>
+    <h1>1.1.0 - 10/3/2020</h1>
+    <ul>
+        <li>Added mockK mocking, default failing tests, and a bunch of use case testing.</li>
+    </ul>
     ]]>
     </change-notes>
 
     <!-- please see https://confluence.jetbrains.com/display/IDEADEV/Build+Number+Ranges for description -->
-    <idea-version since-build="192" until-build="193.*"/>
+    <idea-version since-build="192.7142" until-build="201.*"/>
 
     <depends>com.intellij.modules.lang</depends>
     <depends>org.jetbrains.kotlin</depends>

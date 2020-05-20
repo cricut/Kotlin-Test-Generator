@@ -6,6 +6,7 @@ class ClassWithNestedClass {
     }
 
     fun doAnotherThing(string: String): Boolean {
+        println("We did another thing")
         return NestedClass().nestedFun()
     }
 

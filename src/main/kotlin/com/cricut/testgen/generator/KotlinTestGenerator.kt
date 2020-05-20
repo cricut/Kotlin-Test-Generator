@@ -168,7 +168,7 @@ class KotlinTestGenerator {
                 }
                 val stringBuilder = StringBuilder()
                 params.forEach { stringBuilder.append("$it, ") }
-                return@map stringBuilder.toString().dropLast(2) ?: ""
+                return@map stringBuilder.toString().dropLast(2)
             }
             return@map ""
         }
